@@ -50,3 +50,12 @@ The following property meta data can be changed:
 `get: function() { return language }`
 // Defining a setter
 `set: function(value) { language = value }`
+
+
+### Note
+
+The `getOwnPropertyNames()` method returns all properties.
+
+The `Object.keys()` method returns all enumerable properties.
+
+If you define object properties without enumerable:false, the two methods will return the same.
